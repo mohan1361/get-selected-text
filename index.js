@@ -82,7 +82,7 @@ var PopOver = /*#__PURE__*/function (_Component) {
     _defineProperty(_assertThisInitialized(_this), "selectionEndText", function (e) {
       var t = document.getSelection();
       
-      if(t.baseNode.parentNode.closest(this.props.targetElement) == null) return;
+      if(t.baseNode.parentNode.closest(_this.props.targetElement) == null) return;
 
       if (t.toString().length !== 0) {
         _this.range = t.getRangeAt(0);
